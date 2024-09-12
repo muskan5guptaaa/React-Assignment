@@ -1,25 +1,25 @@
 // Counter.js
 import React, { useState } from 'react';
 
-const Counter = () => {
-  const [count, setCount] = useState(0); // Initial state of count is set to 0
+const Counter=()=>{
+  const[count,setCount]=useState(0);
+    
+ const increaseCount=()=>{
+  setCount(count+1);
 
-  // Function to increase the count
-  const increaseCount = () => {
-    setCount(count + 1);
-  };
-
-  // Function to decrease the count
   const decreaseCount = () => {
     setCount(count - 1);
-  };
+
+ }
+}
 
   return (
     <div style={counterStyle}>
-      <h2>Counter: {count}</h2>
       <button onClick={increaseCount} style={buttonStyle}>Increase</button>
       <button onClick={decreaseCount} style={buttonStyle}>Decrease</button>
+
     </div>
+    
   );
 };
 
